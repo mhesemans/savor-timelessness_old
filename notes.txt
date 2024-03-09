@@ -1,0 +1,8 @@
+book cover made with FOTOR AI
+FAVICONs made with SKETCH.IO
+used https://color.adobe.com/create/color-wheel selected compound colours, i wanted orange tones as they match the tone of the book's highlights and found that light-blue made a good harmony
+
+bug - flex-grow for nav-size-normal and nav-size-big wasn't working. Idenntified that .nav-links li has width 100% applied, removed width for the li style and this allowed flex-grow to function
+
+bug - nav link text is not center, i figured it needed a div width to reference against, but adding a div with 100% width made no difference. I applied text-align to the parent of the div and the nav-bar as well, but this had no effect.
+Checked content with chrome dev-tools, identified that the div took the intended space, but the a element wasn't. Realized that the a elements in the bar needed justify-content:center, this resolved the issue.
